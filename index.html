@@ -503,6 +503,75 @@
       background: #dce9df;
     }
 
+    .testimonials {
+      background: var(--paper);
+    }
+
+    .testimonials-head {
+      max-width: 760px;
+      margin: 0 auto 38px;
+      text-align: center;
+    }
+
+    .testimonials-head h2 {
+      margin: 0 0 14px;
+      color: var(--green-dark);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.1;
+    }
+
+    .testimonials-head p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.68;
+      font-size: 1.08rem;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .testimonial-card {
+      min-height: 260px;
+      display: grid;
+      align-content: space-between;
+      gap: 24px;
+      padding: 28px 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #e8f4eb;
+      box-shadow: 0 10px 26px rgba(35, 44, 38, 0.07);
+    }
+
+    .stars {
+      color: var(--green);
+      font-size: 1.12rem;
+      letter-spacing: 0;
+    }
+
+    .testimonial-card blockquote {
+      margin: 0;
+      color: #303936;
+      line-height: 1.62;
+    }
+
+    .testimonial-person {
+      display: grid;
+      gap: 4px;
+    }
+
+    .testimonial-person strong {
+      color: var(--ink);
+      font-size: 1.02rem;
+    }
+
+    .testimonial-person span {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
     .map-frame iframe {
       display: block;
       width: 100%;
@@ -565,7 +634,8 @@
       .services-layout,
       .before-after-grid,
       .process-steps,
-      .location-layout {
+      .location-layout,
+      .testimonials-grid {
         grid-template-columns: 1fr;
       }
 
@@ -876,6 +946,57 @@
               <button class="button green" type="button" id="load-map">Google Maps anzeigen</button>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" aria-labelledby="bewertungen-title">
+      <div class="container">
+        <div class="testimonials-head">
+          <h2 id="bewertungen-title">Kundenbewertungen</h2>
+          <p>Das sagen Kunden aus der Region über unsere Arbeit.</p>
+        </div>
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div>
+              <div class="stars" aria-label="5 von 5 Sternen">★★★★★</div>
+              <blockquote>Die Gartenpflege wurde sehr sauber und zuverlässig erledigt. Absprachen waren unkompliziert und das Ergebnis sieht ordentlich aus.</blockquote>
+            </div>
+            <div class="testimonial-person">
+              <strong>Anna Weber</strong>
+              <span>Lollar</span>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div>
+              <div class="stars" aria-label="5 von 5 Sternen">★★★★★</div>
+              <blockquote>Freundlicher Kontakt, schnelle Rückmeldung und eine faire Einschätzung vor Ort. Wir sind mit der Ausführung sehr zufrieden.</blockquote>
+            </div>
+            <div class="testimonial-person">
+              <strong>Michael Schneider</strong>
+              <span>Marburg</span>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div>
+              <div class="stars" aria-label="5 von 5 Sternen">★★★★★</div>
+              <blockquote>Unser Beet wurde neu angelegt und wirkt jetzt wieder gepflegt. Die Arbeit wurde pünktlich und sauber abgeschlossen.</blockquote>
+            </div>
+            <div class="testimonial-person">
+              <strong>Sabine Becker</strong>
+              <span>Mornshausen</span>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div>
+              <div class="stars" aria-label="5 von 5 Sternen">★★★★★</div>
+              <blockquote>Sehr zuverlässiger Hausmeisterservice. Kleine Arbeiten rund ums Objekt werden ordentlich und ohne lange Wartezeit erledigt.</blockquote>
+            </div>
+            <div class="testimonial-person">
+              <strong>Tobias Klein</strong>
+              <span>Lollar</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
