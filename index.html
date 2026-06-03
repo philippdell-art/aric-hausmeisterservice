@@ -99,23 +99,6 @@
       border-color: var(--green);
     }
 
-    .menu-icon {
-      display: none;
-      width: 42px;
-      height: 42px;
-      border: 0;
-      background: transparent;
-      padding: 7px;
-    }
-
-    .menu-icon span {
-      display: block;
-      height: 3px;
-      margin: 6px 0;
-      border-radius: 4px;
-      background: #161a18;
-    }
-
     .hero {
       padding: 86px 0 46px;
       background: var(--paper);
@@ -127,6 +110,14 @@
       justify-items: center;
       gap: 18px;
       margin-bottom: 34px;
+    }
+
+    .hero-note {
+      max-width: 520px;
+      margin: -8px 0 0;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.55;
     }
 
     .hero-logo {
@@ -566,10 +557,6 @@
         display: none;
       }
 
-      .menu-icon {
-        display: block;
-      }
-
       .hero {
         padding-top: 62px;
       }
@@ -620,6 +607,11 @@
         min-height: 54px;
         padding: 0 18px;
         white-space: normal;
+      }
+
+      .hero-note {
+        max-width: 340px;
+        font-size: 0.98rem;
       }
 
       .hero-teasers {
@@ -680,11 +672,6 @@
         <a href="#kontakt">Kontakt</a>
         <a href="#standort">Standort</a>
       </nav>
-      <button class="menu-icon" type="button" aria-label="Menü öffnen">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </div>
   </header>
 
@@ -693,7 +680,8 @@
       <div class="container">
         <div class="logo-lockup">
           <img class="hero-logo" src="logo-header.jpg" alt="Aric Hausmeisterservice - Verlässlichkeit, die sich zeigt">
-          <a class="button" href="#kontakt">Gratis Kostenvoranschlag vereinbaren</a>
+          <a class="button" href="#kontakt">Jetzt Kontakt aufnehmen</a>
+          <p class="hero-note">Wir beraten Sie gerne kostenlos und erstellen ein passendes Angebot.</p>
         </div>
 
         <div class="hero-teasers" aria-label="Leistungsübersicht">
@@ -724,7 +712,7 @@
         <div class="services-layout">
           <div>
             <h2 class="section-title">Unsere Dienstleistungen</h2>
-            <p class="lead">Ich stehe Ihnen für alle Fragen rund um Gartenpflege und Hausmeisterdienste zur Verfügung. Vertrauen Sie auf Erfahrung, klare Absprachen und ein breites Spektrum an professionellen Dienstleistungen aus einer Hand.</p>
+            <p class="lead">Wir stehen Ihnen für alle Fragen rund um Gartenpflege und Hausmeisterdienste zur Verfügung. Vertrauen Sie auf unsere Erfahrung, klare Absprachen und ein breites Spektrum an professionellen Dienstleistungen aus einer Hand.</p>
             <ul class="service-list">
               <li>Objektbetreuung</li>
               <li>Renovierungsarbeiten</li>
@@ -734,6 +722,7 @@
               <li>Treppenhausreinigung und Mülltonnenservice</li>
               <li>Kleinreparaturen rund um Haus und Hof</li>
               <li>Winterdienst nach Vereinbarung</li>
+              <li>und vieles mehr auf Anfrage</li>
             </ul>
           </div>
           <div class="service-photo">
@@ -869,7 +858,7 @@
         <div class="location-layout">
           <div>
             <h2>Standort</h2>
-            <p>Mein Sitz befindet sich in der Ernst-Leinbach-Straße 16, 35075 Gladenbach. Besuchen Sie uns für weitere Informationen zu unseren Dienstleistungen.</p>
+            <p>Unser Sitz befindet sich in der Ernst-Leinbach-Straße 16, 35075 Gladenbach.</p>
             <div class="location-detail">
               <div>
                 <h3>Adresse</h3>
